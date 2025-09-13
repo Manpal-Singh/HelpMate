@@ -1,5 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import "typeface-roboto";
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -10,12 +12,17 @@ import "./index.css";
 import App from "./App.jsx";
 import About from "./Pages/About.jsx";
 import Contact from "./Pages/Contact.jsx";
+import Body from "./Components/Body/Body.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
       {
         path: "about",
         element: <About />,
