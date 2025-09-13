@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import AppLayout from './Components/Body/AppLayout'
+import { useState } from "react";
+import "./App.css";
+import AppLayout from "./Components/AppLayout";
 
 function App() {
-
   return (
     <>
       <AppLayout />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
