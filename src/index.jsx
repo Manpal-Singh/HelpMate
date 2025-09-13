@@ -1,18 +1,13 @@
+import "typeface-roboto";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "typeface-roboto";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
-import "./index.css";
-import App from "./App.jsx";
-import About from "./Pages/About.jsx";
-import Contact from "./Pages/Contact.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Body from "./Components/Body/Body.jsx";
+import App from "./App.jsx";
+import About from "./Pages/about.jsx";
+import Contact from "./Pages/contact.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {

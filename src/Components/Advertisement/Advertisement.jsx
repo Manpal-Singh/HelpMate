@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import adImg1 from "../../assets/images/ad1.jpg";
-import adImg2 from "../../assets/images/ad2.jpg";
-import adImg3 from "../../assets/images/ad3.jpg";
-import StaticContext from "../utils/StaticContext";
+import StaticContext from "../../utils/StaticContext";
 
 const SideBar = () => {
   const { isScrroll } = useContext(StaticContext);

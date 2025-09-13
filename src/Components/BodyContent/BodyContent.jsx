@@ -1,7 +1,6 @@
-import React from "react";
-import { ServiceList } from "./ServiceList";
+import { ServiceList } from "../Services/ServiceList";
 
-const MainContent = () => {
+const BodyContent = () => {
   return (
     <div className="w-[80%] mx-auto mt-10">
       <div className="top-box flex flex-row gap-5 bg-white text-black p-5 items-center rounded-lg shadow-md">
@@ -26,4 +25,4 @@ const MainContent = () => {
   );
 };
 
-export default MainContent;
+export default BodyContent;

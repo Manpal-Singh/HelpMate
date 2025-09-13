@@ -8,7 +8,6 @@ import {
   scrollThreshold,
   helpMateLogoText,
 } from "../../Constants/Constants";
-
 import "../../../src/index.css";
 
 function Header() {

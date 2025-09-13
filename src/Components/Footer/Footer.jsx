@@ -1,5 +1,10 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import {
+  copyrightText,
+  helpMateLogo,
+  helpMateLogoText,
+} from "../../Constants/Constants";
+import { getCurrentYear } from "../../utils/dateUtils";
 
 const Footer = () => {
   return (
@@ -7,7 +12,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-6  ">
         <div className="flex flex-col md:flex-row justify-between items-center ">
           <div className="flex-shrink-0 cursor-pointer">
-            <img src="./logo.png" alt="Logo" className="h-12 w-auto" />
+            <img
+              src={helpMateLogo}
+              alt={helpMateLogoText}
+              className="h-12 w-auto"
+            />
           </div>
 
           <ul className="flex flex-row gap-4 ">
@@ -72,7 +81,7 @@ const Footer = () => {
 
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4 text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} Your Company. All rights reserved.
+          © {getCurrentYear} {copyrightText}
         </div>
       </div>
     </footer>
